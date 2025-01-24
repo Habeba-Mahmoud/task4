@@ -1,0 +1,148 @@
+*{
+margin: 0%;
+padding: 0%;
+box-sizing: border-box;
+}
+
+body{
+display: grid;
+grid-template-columns: 15% 85%;
+grid-template-rows: 9% 11% 35% 3% 35% 7% ;
+height: 100vh;
+
+font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.header{
+    grid-column: span 2;
+}
+.logo{
+    margin: 20px 15px;
+    font-size: larger;
+    color: rgba(82, 122, 100, 0.697);
+    font-weight: bolder;
+}
+nav{
+    position:fixed;
+    right: 15px;
+    top: 10px; 
+}
+a{
+    text-decoration: none;
+    color: rgba(119, 153, 135, 0.697);
+    margin-left: 3px;
+}
+nav button{
+    background-color: rgba(119, 153, 135, 0.697);
+    color: white;
+    width: 80px;
+    padding: 10px 10px;
+    border-radius:30px;
+    border: 0;
+}
+
+.sidebar{
+    background-color:lightgray ;
+    grid-row: 2/7;
+    display: flex;
+    flex-direction: column;
+    
+    
+}
+.sidebar div{
+    background-color: lightblue;
+    color: rgb(17, 51, 51);
+    border-radius: 10px;
+    width: 90%;
+    height: fit-content;
+ margin: 2% 4%;
+padding: 3% 3%;
+}
+button{
+    background-color: rgb(30, 94, 94);
+    color: white;
+    width: 98% ;
+    height: 30px;
+    border-radius:5px;
+    border: 0;
+    margin: 2% 0;
+}
+
+.if{
+    
+    color: rgb(17, 51, 51);
+    padding-top: 15px;
+    margin-left: 2%;
+    
+}
+
+.start{
+    background-color: lightgrey;
+    display: flex;
+    flex-direction: row ;
+   justify-content: center;
+   margin-left: 2%;
+}
+.start div{
+    background-color: lightblue;
+    color: rgb(17, 51, 51);
+    border-radius: 10px;
+    width: 22%;
+    height: fit-content;
+    margin-right: 10px;
+    margin-top: 30px;
+    padding: 5px ;
+    padding-left: 10px;
+}
+.start div img{
+    width: 95% ;
+}
+h4{
+    position: absolute;
+    left: 17%;
+    color: rgb(17, 51, 51);
+    margin-top: 5px;
+}
+.line{
+    padding-top:10px;
+
+margin-left: 2%;
+}
+.then{
+    background-color: lightgrey;
+    grid-row: 5/6;
+    margin-bottom: 1%;
+    margin-left: 2%;
+    display: flex;
+    flex-direction: row ;
+   justify-content: center;
+   margin-left: 2%;
+}
+.then div{
+    background-color: lightblue;
+    color: rgb(17, 51, 51);
+    border-radius: 10px;
+    width: 22%;
+    height: fit-content;
+    margin-right: 10px;
+    margin-top: 30px;
+    padding: 5px ;
+    padding-left: 10px;
+}
+.footer{
+    background-color: rgb(28, 47, 47);
+    color: white;
+    grid-row: 6/7;
+    margin-top: 1%;
+   text-align: center;
+   padding: 10px;
+   font-size: small;
+}
+
+img{
+    margin-top: 5px;
+    width: 98%;
+    height: 120px;
+    border-radius: 10px;
+}
